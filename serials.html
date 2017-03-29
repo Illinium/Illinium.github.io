@@ -1,0 +1,9 @@
+<div class="row">
+	<div class="col-sm-12">
+		<h2>SERIALS</h2>
+	</div>
+	<div class="col-md-2 col--img" ng-repeat="dat in data | filter: { type : 'serial'}">
+		<p title="Смотреть {{dat.name}}"><div class="miniPost"><img src="{{dat.imgSmall}}" ng-click="review(dat)"></div></p>
+		<p>{{dat.name}}</p>
+	</div>
+</div>

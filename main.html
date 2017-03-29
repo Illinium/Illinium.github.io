@@ -1,0 +1,50 @@
+<div class="row row--owl">
+	<div class="owl-carousel owl-loaded">
+
+		<div ng-repeat="c in data | filter: {bigImg: 'img/RotatorImgs'}">
+			<img src="{{c.bigImg}}" class="owl--imgs" title="Смотреть {{c.name}}" ng-click="review(c)">
+				</div>
+
+    	</div>
+	</div>
+
+
+<div class="row--films">
+	<div class="col-md-12">
+		<div class="col-md-2">
+			<a href="films"><button class="btn btn-primary">Фильмы</button></a>
+		</div>
+	</div>
+	<div class="col-md-2 col--img" ng-repeat="dat in data | filter: { type : 'film'} | limitTo:limitValue" ng-click="review(dat)">
+		<p title="Смотреть {{dat.name}}"><div class="miniPost"><img src="{{dat.imgSmall}}"></div></p>
+		<p>{{dat.name}}</p>
+	</div>
+</div>
+
+
+<!-- Сериалы -->
+<div class="row">
+	<div class="col-md-12">
+		<div class="col-md-2">
+			<a href="serials"><button class="btn btn-success">Сериалы</button></a>
+		</div>
+	</div>
+	<div class="col-md-2 col--img" ng-repeat="dat in data | filter: { type : 'serial'} | limitTo:limitValue">
+		<p title="Смотреть {{dat.name}}"><div class="miniPost"><img src="{{dat.imgSmall}}" ng-click="review(dat)"></div></p>
+		<p>{{dat.name}}</p>
+	</div>
+</div>
+
+
+<!-- Мультфильмы -->
+<div class="row">
+	<div class="col-md-12">
+		<div class="col-md-2">
+			<a href="multfilms"><button class="btn btn-warning">Мультфильмы</button></a>
+		</div>
+	</div>
+	<div class="col-md-2 col--img" ng-repeat="dat in data | filter: { type : 'mult'} | limitTo:limitValue">
+		<p title="Смотреть {{dat.name}}"><div class="miniPost"><img src="{{dat.imgSmall}}" ng-click="review(dat)"></div></p>
+		<p>{{dat.name}}</p>
+	</div>
+</div>
