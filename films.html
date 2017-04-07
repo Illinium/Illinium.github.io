@@ -1,9 +1,0 @@
-<div class="row row--white" ng-controller="appCtrl">
-	<div class="col-sm-12">
-		<h2>FILMS</h2>
-	</div>
-	<div class="col-sm-2 col--img" ng-repeat="dat in data | filter: { type : 'film'}" >
-		<p title="Смотреть {{dat.name}}"><div class="miniPost"><img src="{{dat.imgSmall}}" ng-click="review(dat)"></div></p>
-		<p>{{dat.name}}</p>
-	</div>
-</div>
