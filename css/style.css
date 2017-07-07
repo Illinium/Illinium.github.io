@@ -1,427 +1,84 @@
-*{
-	margin: 0;
-	padding: 0;
-}
-.row{
-	margin-left: 0px;
-	margin-right: 0px;
-}
-
 body{
-	background-color: #000000;
-	font: 12px Verdana;
-	padding-bottom: 70px;
-	font: 100%/1.5em Verdana, Arial;
-	overflow-x: hidden;
+	font-family: Arial;
 }
-
-img{
-	max-width: 100%;
-	height: auto;
-}
-
-ul{
-	list-style: none;	
-}
-li{
-	
-	color: #e7be40;
-}
-a{
-	text-decoration: none;
-}
-
-.wrapper{
-	width: auto;
-}
- hr{
-    border: 0;
-    height: 4px;
-    background-image:linear-gradient(to top, #764b19 0%, #412000 35%,#fec563  75%, #efdbcd  100%);
-   
-	
-} 
-
-                              /*  HEADER BEGIN*/
-#menu{
-	    /*-webkit-padding-start: 0px;*/
-}
-#menu a{
-	color: #FFF;
-}
-#menu a:hover{
-	background-image:linear-gradient(to top, #764b19 0%, #412000 25%,#fec563  45%, #efdbcd  65%);
-    -webkit-background-clip: text;
-	color: transparent;	
-}
-#tex-anonim{
-	width:100%;
-}
-header {
-	height: 80px;
-	width: auto;
-}
-/* .navbar-fixed-top{
-	width: auto;
-	height: 60px;
-}*/
-.navbar{
-    background-color: rgba(0, 0, 0, 0.54);
-}
-.navbar-right{
-	margin-right: 20px;
-}
-
-.form-group{
-	border: 5px solid #080808 ;
-    border-radius: 8px;
-	
-}
-
-.navbar-right li {
-	margin: 5px 5px 10px 10px;
-}
-nav {
-	float: right;
-	
-}
-
-nav li {
-	float: right;
-	margin: 10px 45px 5px 10px;
-}
-nav ul a:hover {
-	text-decoration: none;
-	color: #cccccc;
-}
-nav ul a {
-	color: #ffffff;
-	font: 1.5em Verdana, Arial ;
-}
-h1{	   
-	font-family: Verdana;   
-	font-size: 4vw;
-    padding-top: 50px;
-        
-}
-
-#print, #print1, #print2, #print3, #print4{
-	background-image:linear-gradient(to top, #764b19 0%, #412000 5%,#fec563  25%, #efdbcd  35%);
-    /* linear-gradient(to top, #764b19 0%, #412000 35%,#fec563  65%, #efdbcd  100%);   */
-	-webkit-background-clip: text;
-	color: transparent;	
-}	
-
-#blink{
-	background-image:linear-gradient(to top, #764b19 0%, #412000 5%,#fec563  25%, #efdbcd  35%);
-	/* linear-gradient(to top, #764b19 0%, #412000 35%,#fec563  65%, #efdbcd  100%);   */
-	-webkit-background-clip: text;
-	color: transparent;	
-}
-#blink1{
-	visibility: hidden;
-}
-
-
-
-
-
-
-
-                               /*  HEADER END*/
-
-.container{
-	height: auto;
-	max-width: auto;
-}
-#main {
-	/*background: url(../img/bgheader.gif) no-repeat center bottom;*/
+.bg1{
+	background: url("../img/background main.png") no-repeat;
 	background-size: cover;
-	height: auto;
-    margin-top: -80px;
 }
-
-
-#logo{
-	margin: 15% 0 0 10%;
-	position: absolute;
-
-}
-h2{
-	font-family: verdana;
-	color:  #e7be40;
-	font-size: 2,1875em;
-	float: right;
-	margin: 460px 120px 0 0;
-}
-/* #blink{
-	visibility: hidden; */
-}
-#aboutimg{
-	height: 560px;
-	width: 530px;
-	margin: 60px 0 0 0;
-}
-
-/*.buro{
-	float: right;
-	width: 480px;
-	height: 700px;
-	margin: 60px 0 0 0;
-}*/
-
-
-.info{
-	margin: 20px 0 0 100px ;
-	width: 320px;
-}
-
-#buro h1{
-	
-	/*margin: 60px 0 0 160px;*/
-	font-family: Verdana;
-	
-}
-#buroshr{
-	margin-right: -40px;
-}
-/*#buro hr{
-	margin: 10px -15px 0 160px;
-}*/
-
-p{
-	color: #fef4cf;
-	font-size: 1.2em;
-}
-
-#anonim  hr{
-	margin-right: -15px;
-	
-}
-
-#textanonim {
-	/*width: 400px;*/
-	margin: 20% 0 0 0;
-}
-#list2{
-	list-style-type: square;
-	margin-top: 50px;
-}
-
-#list li{
-	display: inline-block;
-	color: #fef4cf;
-	font-size: 14px;
-	width: 170px;
-	height: 150px;
-	margin-left: 40px;
-	margin-top: 50px;
-	text-align: left;
-
-}
-#new{
-	align: center;
-}
-#new h1{
-	text-align: left;
-	padding-left: 40px;
-}
-#new hr{
-	margin-left: -15px;
-}
-
-#newsbody {
-	background: url(../img/news.png) no-repeat center bottom;
+.bg2{
+	background: url("../img/background main2.png") no-repeat;
 	background-size: cover;
-	height: 500px;
-	margin-top: -15px;
-	border: 2px solid #959595;
 }
-
-#pidtrumatu{
-	
+.container--spec{
+	margin: 50px 80px 80px 120px;
+}
+#fond{
+	color: white;
+	font-size: 20px;
+}
+.lang{
+	color: white;
+}
+.row--menu{
+	margin-top: 3%;
+	padding-left: 0;
+	padding-right: 0;
+	border: 2px solid #fef668;
+}
+.nav--border{
+	-moz-box-shadow: -1px -18px 30px 0px #fef668;
+    -webkit-box-shadow: -1px -18px 30px 0px #fef668;
+     box-shadow: -1px -18px 30px 0px #fef668;
+}
+.menu-text{
+	color: black;
+	font-size: 16.39px;
+	font-weight: bold;
+}
+.menu-dark{
+	background-color: #99ccff;
+}
+.menu-white{
+	background-color: #ccffff;
+}
+.menu-yellow{
+	background-color: #fef668;
+}
+.row--wush{
+	background: url("../img/bgnews1.png") no-repeat;
 	background-size: cover;
-	height: 500px;
-	margin-top: 40px;
+	min-height: 1600px;
+	border-radius: 0 0 20px 20px;
+	border: 3px solid #fef668;
 }
-
-#hand{
-background: url(../img/hands.png) no-repeat center bottom;
+.col--blue{
+	background-color: #99ccff;
+	border-radius: 20px;
+	margin-left: 5%;
+	margin-top: 3%;
 }
-#pid{
-	text-align: center;
-
+.col--img1{
+	margin-top: 1%;
 }
-#finger{
-	 position: relative;
-	width: 300px;
-	height: 130px;
-
-	 filter:opacity(30%);
-	
+.col--date{
+	color: red;
+	margin-bottom: 2%;
 }
-#dva{
-	margin-top: 100px;
+.marg{
+	margin-left: 5%;
+	margin-top: 3%;
 }
-
-/*
-#finger:hover{
-	 filter:opacity(100%);
-	 filter:saturate(8);
-
-}*/
-#skarga{
-	margin-top: -95px;  
-	text-decoration: none;
-	background-image:linear-gradient(to top, #764b19 0%, #412000 5%,#fec563  25%, #efdbcd  35%);
-    /* linear-gradient(to top, #764b19 0%, #412000 35%,#fec563  65%, #efdbcd  100%);   */
-	-webkit-background-clip: text;
-	color: transparent;	
+.about-par{
+	margin-top: 25px;
+	font-size: 22px;
 }
-
-#hands{
-	/*background: url(../img/hands.png)  no-repeat center bottom ;*/
-	height: 600px;
+.row--pravo{
+	background: url("../img/baza.png") no-repeat;
+	background-size: cover;
+	min-height: 1200px;
 }
-
-
-#pererah p{
-	text-align: right;
-}
-#pay{
-	max-width: 300px;	
-	margin-left: 100px;
-}
-
-#social {
-	margin: 10px;
-	width: 50px;
-	height: 50px;
-}
-
-#poslan{
-	height: 80px;
-	width: 350px;
-}
-
-#fooleft{
-	margin-left: -30px;
-}
-
-#fooright{
-	margin-right: -25px;
-}
-
-/*  MODAL BOX*/
-
-
-.form-control{
-	color: #080808;
-    background-color: rgba(205, 177, 65, 0.8);    
-    border: 0px ;
-    border-radius: 0px;		
-}
-input[type="text"]::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  color: #080808;
-}
-textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  color: #080808;
-}
-    
-.modal-footer{
-	
-	border-top:0;
-}
-.boxText{	
-	background-color:rgba(205, 177, 65, 0.8);
-	color: #080808;	
-	padding:20px;
-	margin-top:20px;
-	
-}
-
-.modal-content{
-	background-color: rgba(205, 177, 104, 0.41);	
-}
-.modal-footer h2{
-	background-image:linear-gradient(to top, #764b19 0%, #412000 5%,#fec563  25%, #efdbcd  35%);
-    /* linear-gradient(to top, #764b19 0%, #412000 35%,#fec563  65%, #efdbcd  100%);   */
-	-webkit-background-clip: text;
-	color: transparent;	
-	    margin: 0px 0px 0 0;
-}
-
-#comment,#name,#group-1,#namber{
-	width:100%;
-}
-#borderSqer{
-	border: solid 7px rgba(43, 35, 17, 1);
-	border-radius: 6px;
-}
-
-#borderSqer li {
-	type:disc;
-	color: #080808;	
-}
-#borderSqer p {
-	type:disc;
-	color: #080808;	
-}
-.boxshadow 
-{
-  -moz-box-shadow: 3px 3px 5px #535353;
-  -webkit-box-shadow: 3px 3px 5px #535353;       
-  box-shadow: 0px 0px 0px #535353;
-}
-.roundbox
-{  
-  -moz-border-radius: 6px 6px 6px 6px;
-  -webkit-border-radius: 6px;  
-  border-radius: 6px 6px 6px 6px;
-}
-
-
-
-#dva:after {
-  content: "";
-  position: absolute; top: 0;
-  left: 16em;
-  width: 50%;
-  height: 180%;
-  background: linear-gradient(to left, rgba(255,255,255,.0), rgba(255,255,255,.8), rgba(255,255,255,.0)) -60px -80px no-repeat ;
-  background-size: 100% 1.2em;
-  transform: skewX(0deg);
-/*  cursor: pointer;*/
-}
-#dva:hover:after {
-  transition: 2s linear;
-  background-position: 0% 200%;
-}
-
-#dva:hover #finger{
-	 filter:opacity(100%);
-	 filter:saturate(8);
-}
-
-
-
-@media (max-width: 330px){
-	#dva{
-		background-color: white;
-		margin-top: 0;
-	}
-
-	
-}
-
-
-
-
-@media only screen and (max-width: 500px){
-	h1{
-		font-size: 25px;
-	}
-	#pay{
-		margin-left: -100px;
-	}
+.row--practic{
+	background: url("../img/practices.png") no-repeat;
+	background-size: cover;
+	min-height: 1200px;
 }
