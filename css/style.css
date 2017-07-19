@@ -3,14 +3,18 @@ body{
 }
 .bg1{
 	background: url("../img/background main.png") no-repeat;
-	background-size: cover;
+	background-size: 100%;
+	background-attachment: fixed;
 }
 .bg2{
 	background: url("../img/background main2.png") no-repeat;
-	background-size: cover;
+	background-size: 100%;
+	background-attachment: fixed;
 }
 .container--spec{
-	margin: 50px 80px 80px 120px;
+	/*padding: 50px 80px 80px 120px;*/
+	    padding-top: 50px;
+    	margin: 0 89px;
 }
 #fond{
 	color: white;
@@ -51,6 +55,13 @@ body{
 	border-radius: 0 0 20px 20px;
 	border: 3px solid #fef668;
 }
+.row--cow{
+	background: url("../img/bgcow.png") no-repeat;
+	background-size: cover;
+	min-height: 1600px;
+	border-radius: 0 0 20px 20px;
+	border: 3px solid #fef668;
+}
 .col--blue{
 	background-color: #99ccff;
 	border-radius: 20px;
@@ -75,10 +86,30 @@ body{
 .row--pravo{
 	background: url("../img/baza.png") no-repeat;
 	background-size: cover;
-	min-height: 1200px;
+	min-height: 900px;
+	border-radius: 0 0 20px 20px;
+	border: 3px solid #fef668;
 }
 .row--practic{
 	background: url("../img/practices.png") no-repeat;
 	background-size: cover;
 	min-height: 1200px;
+}
+.fig{
+	text-align: center;
+}
+.fig img{
+	margin-top: 10%;
+}
+.row--bgcont{
+	background: url("../img/bgcontacts.png") no-repeat;
+	background-size: cover;
+	min-height: 1200px;
+}
+.conts{
+	background-color: white;
+
+}
+.bgred{
+	background-color: red;
 }
