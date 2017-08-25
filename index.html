@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head ng-app="SampleApp">
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Document</title>
-
+	<script src="js/angular.js"></script>
 	<link rel="stylesheet" href="css/style.css" media="(max-width: 330px)">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<!--[if lt IE 9]>
@@ -16,187 +16,154 @@
 	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="css/style.css">
+	<script src="app.js"></script>
 </head>
 <body>
-
-<div class="container-fluide container--bg">
-	<div class="row row--main" id="main">
-		<div class="col-md-4 col-sm-4 col-xs-4 col-lg-4">
-			<div class="btnlook">
-				<a href="#look"><h2>Loo<img src="img/K.png" class="extraimg">book</h2></a>
-			</div>
-		</div>
-		<div class="col-md-4 col-sm-4 col-xs-4 col-lg-4">
-			<div class="btncont">
-				<a href="#contacts"><h2>Contac<img src="img/T.png" class="extraimg">s</h2></a>
-			</div>
-			<img src="img/mainlogo.png" alt="" class="logo">
-			<div class="btnabout">
-				<a href="#about"><h2 class="aboutH">Abo<img src="img/U.png" class="extraimg">t</h2></a>
-			</div>
-		</div>
-		<div class="col-md-4 col-sm-4 col-xs-4 col-lg-4">
-			<div class="btnnews">
-				<a href="#news"><h2>New<img src="img/S.png" class="extraimg"></h2></a>
-			</div>
-		</div>	
-	</div>
-
-	<div class="row row--lookbook" id="look">
-		<div class="col-md-6 col-md-offset-3">
-			<h1>L<img src="img/O.png" class="o">OKBOOK</h1>
-		</div>
-		<div class="col-md-6 col-md-offset-3">
-			<div class="col-md-10 col-md-offset-2"><hr class="redline"></div>
-			<div class="col-md-6 col-md-offset-4"><hr class="redline"></div>
-		</div>
-		<div class="col-md-12">
-			<div class="slider">
-   				<div><img src="img/slide1.png" alt="" class="slide"></div>
-    			<div><img src="img/slide2.png" alt="" class="slide"></div>
-    			<div><img src="img/slide3.png" alt="" class="slide"></div>
-  			</div>
-		</div>
-	</div>
-	<div class="row row--news" id="news">
-		<div class="col-md-6 col-md-offset-3">
-			<h1>NEWS</h1>
-			<div class="col-md-4 col-md-offset-4"><img src="img/newsline.png" alt=""></div>
-		</div>
-		<div class="col-md-12 col--contnews">
-			<div class="col-md-10 col-md-offset-1">
-				<div class="col-md-3"><div class="rag"><img src="img/photonews1.png" alt="" class="imgsnews"><p>17 декабря прошла презентация новой коллекции KUST by Ella Kulikova: официальное видео</p></div></div>
-				<div class="col-md-3"><div class="rag"><img src="img/photonews2.png" alt="" class="imgsnews"><p>	Старт рекламной<br> компании Kust Fashion<br> House</p></div></div>
-				<div class="col-md-3"><div class="rag"><img src="img/photonews3.png" alt="" class="imgsnews">В ресторане Avalon состоялась презентация коллекции KUST by Ella</div></div>
-				<div class="col-md-3"><div class="rag"><img src="img/photonews4.png" alt="" class="imgsnews">Показ коллекции "Контраст" 6 августа в ресторане Avalon: фото</div></div>
-			</div>	
-		</div>	
-	</div>
-	<div class="row row--about" id="about">
-		
-                
-                <div class="col-md-8">
-					<div class="col-md-9 col-md-offset-3">	
-                    	<h1 class="about-title-text-style">...ABOUT SH<img class="about-logo-style" src="img/logo-sm.png">P</h1>
-               		</div>
-	                <div class="col-md-8 col-md-offset-2">
-	                    <img src="img/about-line-under-title.png" class=""> 
-	                </div>
-                
-	                <div class="col-md-9 col-md-offset-3">
-	                    <p class="about-content-text-style">
-	                    &nbsp;&nbsp;&nbsp;&nbsp;Философия моей марки в том, чтобы<br>
-	                    делать носибельную одежду, для реальной<br>
-	                    жизни и роскошные наряды ручной работы<br>
-	                    для особого выхода - удобная, практичная<br>
-	                    и высокого качества.
-	                    </p>
-	                    <h3 class="about-ella-name-text-style">Элла Куликова<br>
-	                    <img class="about-line-ella-under-name" src="img/about-line-under-name.png">
-	                    </h3>
-	                </div>
+	<div class="container-fluide container--bg">
+		<div class="row row--main" id="main">
+			<div class="col-md-4 col-sm-4 col-xs-4 col-lg-4">
+				<div class="btnlook">
+					<a href="#look"><h2>Loo<img src="img/K.png" class="extraimg">book</h2></a>
 				</div>
-                <div id="about-ella-carved-photo" class="col-md-3 col-md-offset-1 col-sm-6 content-align-center">
-                    <img src="img/ella-carved.png">
-                </div>
-
-                
-	</div>
-	<div class="row row--contacts" id="contacts">
-		<div class="col-md-6 col-md-offset-3">
-			<h1 class="conststyle">CONTACTS</h1>
-		</div>
-		<div class="col-md-7 col-md-offset-5"><img src="img/contacts underline.png" alt=""></div>
-		<div class="col-md-12 col--contactscontainer">	
-			<div class="col-md-3 col-md-offset-3">
-				<p class="contacts-text">Адрес магазина в Киеве:<br>
-					г. Киев, ул. Жилянская, 59,<br>
-					 ЖК "Дипломат-холл", 2 этаж,<br>
-					 Магазин "Kust Fashion House"
-				</p>
 			</div>
-			<div class="col-md-3 col-md-offset-1">
-				<p class="contacts-text">Телефоны:<br>
-					+380 /095/ 870-00-08<br>
-					+380 /099/ 762-27-37<br>
-					+380 /050/ 492-29-49
-				</p>
+			<div class="col-md-4 col-sm-4 col-xs-4 col-lg-4">
+				<div class="btncont">
+					<a href="#contacts"><h2>Contac<img src="img/T.png" class="extraimg">s</h2></a>
+				</div>
+				<img src="img/mainlogo.png" alt="" class="logo">
+				<div class="btnabout">
+					<a href="#about"><h2 class="aboutH">Abo<img src="img/U.png" class="extraimg">t</h2></a>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-4 col-xs-4 col-lg-4">
+				<div class="btnnews">
+					<a href="#news"><h2>New<img src="img/S.png" class="extraimg"></h2></a>
+				</div>
+			</div>	
+		</div>
+
+		<div class="row row--lookbook" id="look" ng-controller="SampleAppCtrl">
+			<ng-include src="url"></ng-include>
+			
+		</div>
+		<div class="row row--news" id="news">
+			<ng-include src="url2"></ng-include>
+		</div>
+		<div class="row row--about" id="about">
+			
+	                
+	                <div class="col-md-8">
+						<div class="col-md-9 col-md-offset-3">	
+	                    	<h1 class="about-title-text-style">...ABOUT SH<img class="about-logo-style" src="img/logo-sm.png">P</h1>
+	               		</div>
+		                <div class="col-md-8 col-md-offset-2">
+		                    <img src="img/about-line-under-title.png" class=""> 
+		                </div>
+	                
+		                <div class="col-md-9 col-md-offset-3">
+		                    <p class="about-content-text-style">
+		                    &nbsp;&nbsp;&nbsp;&nbsp;Философия моей марки в том, чтобы<br>
+		                    делать носибельную одежду, для реальной<br>
+		                    жизни и роскошные наряды ручной работы<br>
+		                    для особого выхода - удобная, практичная<br>
+		                    и высокого качества.
+		                    </p>
+		                    <h3 class="about-ella-name-text-style">Элла Куликова<br>
+		                    <img class="about-line-ella-under-name" src="img/about-line-under-name.png">
+		                    </h3>
+		                </div>
+					</div>
+	                <div id="about-ella-carved-photo" class="col-md-3 col-md-offset-1 col-sm-6 content-align-center">
+	                    <img src="img/ella-carved.png">
+	                </div>
+		</div>
+		<div class="row row--contacts" id="contacts">
+			<div class="col-md-6 col-md-offset-3">
+				<h1 class="conststyle">CONTACTS</h1>
+			</div>
+			<div class="col-md-7 col-md-offset-5"><img src="img/contacts underline.png" alt=""></div>
+			<div class="col-md-12 col--contactscontainer">	
+				<div class="col-md-3 col-md-offset-3">
+					<p class="contacts-text">Адрес магазина в Киеве:<br>
+						г. Киев, ул. Жилянская, 59,<br>
+						 ЖК "Дипломат-холл", 2 этаж,<br>
+						 Магазин "Kust Fashion House"
+					</p>
+				</div>
+				<div class="col-md-3 col-md-offset-1">
+					<p class="contacts-text">Телефоны:<br>
+						+380 /095/ 870-00-08<br>
+						+380 /099/ 762-27-37<br>
+						+380 /050/ 492-29-49
+					</p>
+				</div>
+			</div>
+			<div class="col-md-12 col--contactscontainer2">	
+				<div class="col-md-3 col-md-offset-3">
+					<p class="contacts-text">E-mail:<br>
+						info@kust.fashion
+					</p>
+				</div>
+				<div class="col-md-3 col-md-offset-1">
+					<p class="contacts-text">Время работы:<br>
+						Пн-Пт: 10.00 - 19.00<br>
+						Cб, вс: 10.00 - 17.00
+
+					</p>
+				</div>
 			</div>
 		</div>
-		<div class="col-md-12 col--contactscontainer2">	
-			<div class="col-md-3 col-md-offset-3">
-				<p class="contacts-text">E-mail:<br>
-					info@kust.fashion
-				</p>
+		<div class="row row--useful" id="useful">
+			<div class="col-md-6 col-md-offset-3"><h1 class="useful">USEFUL</h1> <div class="col-md-6 col-md-offset-3"><hr class="usefulline"></div></div>
+
+			<div class="col-md-3 col-md-offset-3 col--links">
+				<!-- <a href="#">РАЗМЕРЫ</a><br>
+				<a href="#">О МАГАЗИНЕ</a><br>
+				<a href="#">ОПЛАТА И ДОСТАВКА</a><br>
+				<a href="#">СХЕМА ПРОЕЗДА</a><br>
+				<a href="#">КАРТА САЙТА</a> -->
 			</div>
-			<div class="col-md-3 col-md-offset-1">
-				<p class="contacts-text">Время работы:<br>
-					Пн-Пт: 10.00 - 19.00<br>
-					Cб, вс: 10.00 - 17.00
-
-				</p>
+			<div class="col-md-3 col-md-offset-1 col--links">
+				<p>КОНТАКТЫ<br>
+				Адрес магазина в Киеве:<br>
+	             г. Киев, ул. большая<br>
+	             ваильковская, 72,<br> 
+	             ТЦ "олимпийский", 2 этаж,<br>
+	             Магазин "Kust Fashion House"</p>
 			</div>
 		</div>
-	</div>
-	
-
-	<div class="row row--useful" id="useful">
-		<div class="col-md-6 col-md-offset-3"><h1 class="useful">USEFUL</h1> <div class="col-md-6 col-md-offset-3"><hr class="usefulline"></div></div>
-
-		<div class="col-md-3 col-md-offset-3 col--links">
-			<a href="#">РАЗМЕРЫ</a><br>
-			<a href="#">О МАГАЗИНЕ</a><br>
-			<a href="#">ОПЛАТА И ДОСТАВКА</a><br>
-			<a href="#">СХЕМА ПРОЕЗДА</a><br>
-			<a href="#">КАРТА САЙТА</a>
-		</div>
-		<div class="col-md-3 col-md-offset-1 col--links">
-			<p>КОНТАКТЫ<br>
-			Адрес магазина в Киеве:<br>
-             г. Киев, ул. большая<br>
-             ваильковская, 72,<br> 
-             ТЦ "олимпийский", 2 этаж,<br>
-             Магазин "Kust Fashion House"</p>
-		</div>
-	</div>
-	 <nav class="navbar navbar-custom">
-                        <div class="container-fluid">
-                            <div class="navbar-header">
-                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#responsive-menu">
-                                    <span class="sr-only">Open Navigation</span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                </button>
-                            </div>
-                            <div class="collapse navbar-collapse" id="responsive-menu">
-                                <ul class="nav navbar-nav">
-                                    <li><a href="#main">MAIN MENU</a></li>
-                                    <li><a href="#look">LOOK BOOK</a></li>
-                                    <li><a href="#news">NEWS</a></li>
-                                    <li><a href="#about">ABOUT</a></li>
-                                    <li><a href="#contacts">CONTACTS</a></li>
-                                    <li><a href="#useful">USEFUL</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div id="about-line-under-menu" class="col-md-12 col-sm-12 content-align-center">
-                            <img src="img/line-under-menu.png" >
-                        </div>
-                    </nav> 
-
-</div>
-
-
-
-
-
-	
+		<nav class="navbar navbar-custom">
+	        <div class="container-fluid">
+	            <div class="navbar-header">
+	              	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#responsive-menu">
+	                    <span class="sr-only">Open Navigation</span>
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	             	 </button>
+	            </div>
+	            <div class="collapse navbar-collapse" id="responsive-menu">
+	                <ul class="nav navbar-nav">
+	                    <li><a href="#main">MAIN MENU</a></li>
+	                    <li><a href="#look">LOOK BOOK</a></li>
+	                    <li><a href="#news">NEWS</a></li>
+	                    <li><a href="#about">ABOUT</a></li>
+	                    <li><a href="#contacts">CONTACTS</a></li>
+	                    <li><a href="#useful">USEFUL</a></li>
+	                </ul>
+	            </div>
+	        </div>
+	        <div id="about-line-under-menu" class="col-md-12 col-sm-12 content-align-center">
+	            <img src="img/line-under-menu.png" >
+	        </div>
+	    </nav> 
+	</div>	
 
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/anchor.js"></script>   <!--  якорь -->
 	<script src="slick/slick.min.js"></script>
 	<script src="js/main.js"></script>
+	<!-- <script src="js/app.js"></script> -->
 </body>
 </html>
