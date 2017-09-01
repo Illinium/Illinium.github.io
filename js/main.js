@@ -25,3 +25,12 @@ $('.slider').slick({
     }
   ]
 });
+
+$(window).scroll(function(){
+  if($(this).scrollTop() > $('.slick-track').height()){
+    $('.menu--hide').css({display : "block"})
+}if($(this).scrollTop() < $('.slick-track').height()){
+  $('.menu--hide').css({display : "none"})
+}
+})
+

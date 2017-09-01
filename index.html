@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
-<head ng-app="SampleApp">
+<html lang="en" ng-app="SampleApp">
+<head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Document</title>
 	<script src="js/angular.js"></script>
+	<script src="app.js"></script>
 	<link rel="stylesheet" href="css/style.css" media="(max-width: 330px)">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<!--[if lt IE 9]>
@@ -16,9 +17,9 @@
 	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="css/style.css">
-	<script src="app.js"></script>
+	<link rel="stylesheet" href="css/font-awesome.min.css">
 </head>
-<body>
+<body ng-controller="SampleAppCtrl">
 	<div class="container-fluide container--bg">
 		<div class="row row--main" id="main">
 			<div class="col-md-4 col-sm-4 col-xs-4 col-lg-4">
@@ -42,55 +43,85 @@
 			</div>	
 		</div>
 
-		<div class="row row--lookbook" id="look" ng-controller="SampleAppCtrl">
+		<div class="row row--lookbook" id="look">
+			<div class="col-md-6 col-md-offset-3">
+				<h1>L<img src="img/O.png" class="o">OKBOOK</h1>
+			</div>
+			<div ng-show="ShowRot">	
+				<div class="col-md-6 col-md-offset-3">
+					<div class="col-md-10 col-sm-10 col-xs-10 col-lg-10 col-md-offset-2 col-xs-offset-2 col-sm-offset-2 col-lg-offset-2"><hr class="redline"></div>
+					<div class="col-md-6 col-sm-6 col-xs-6 col-lg-6 col-md-offset-4 col-xs-offset-4 col-sm-offset-4 col-lg-offset-4"><hr class="redline"></div>
+				</div>
+				<div class="col-md-12">
+					<div class="slider">
+					   	<div ng-click="showColl1()"><img src="img/slide1.png" alt="" class="slide pointer"></div>
+					    <div ng-click="showColl2()"><img src="img/slide2.png" alt="" class="slide pointer"></div>
+					    <div ng-click="showColl3()"><img src="img/slide3.png" alt="" class="slide pointer"></div>
+					 </div>
+				</div>
+			</div>
 			<ng-include src="url"></ng-include>
 			
 		</div>
 		<div class="row row--news" id="news">
+			<div class="col-md-6 col-md-offset-3" ng-show="ShowNews">
+				<h1>NEWS</h1>
+				<div class="col-md-4 col-md-offset-4 col--hide"><img src="img/newsline.png" alt=""></div>
+			</div>
+			<div class="col-md-12 col--contnews" ng-show="ShowNews">
+				<div class="col-md-10 col-md-offset-1">
+					<div class="col-md-3"><div class="rag pointer" ng-click="showNews1()"><div class="col-md-12"><img src="img/photonews1.png" alt="" class="imgsnews"></div><div class="col-md-12"><p class="para">17 декабря прошла презентация новой коллекции KUST by Ella Kulikova: официальное видео</p></div></div></div>
+					<!-- <div class="col-md-3"><div class="rag"><img src="img/photonews2.png" alt="" class="imgsnews"><p>	Старт рекламной<br> компании Kust Fashion<br> House</p></div></div>
+					<div class="col-md-3"><div class="rag"><img src="img/photonews3.png" alt="" class="imgsnews">В ресторане Avalon состоялась презентация коллекции KUST by Ella</div></div>
+					<div class="col-md-3"><div class="rag"><img src="img/photonews4.png" alt="" class="imgsnews">Показ коллекции "Контраст" 6 августа в ресторане Avalon: фото</div></div> -->
+				</div>	
+			</div>
 			<ng-include src="url2"></ng-include>
 		</div>
 		<div class="row row--about" id="about">
 			
 	                
-	                <div class="col-md-8">
+	                <div class="col-md-8 col-xs-8 col-sm-8 col-lg-8">
 						<div class="col-md-9 col-md-offset-3">	
 	                    	<h1 class="about-title-text-style">...ABOUT SH<img class="about-logo-style" src="img/logo-sm.png">P</h1>
 	               		</div>
-		                <div class="col-md-8 col-md-offset-2">
-		                    <img src="img/about-line-under-title.png" class=""> 
+		                <div class="col-md-8 col-xs-8 col-sm-8 col-lg-8 col-md-offset-2 col-lg-offset-2 col-sm-offset-2 col-xs-offset-2  col--hide">
+		                    <img src="img/about-line-under-title.png"> 
 		                </div>
 	                
 		                <div class="col-md-9 col-md-offset-3">
 		                    <p class="about-content-text-style">
-		                    &nbsp;&nbsp;&nbsp;&nbsp;Философия моей марки в том, чтобы<br>
+		                    Философия моей марки в том, чтобы<br>
 		                    делать носибельную одежду, для реальной<br>
 		                    жизни и роскошные наряды ручной работы<br>
 		                    для особого выхода - удобная, практичная<br>
 		                    и высокого качества.
 		                    </p>
 		                    <h3 class="about-ella-name-text-style">Элла Куликова<br>
-		                    <img class="about-line-ella-under-name" src="img/about-line-under-name.png">
+		                    <img class="about-line-ella-under-name col--hide" src="img/about-line-under-name.png">
 		                    </h3>
 		                </div>
 					</div>
-	                <div id="about-ella-carved-photo" class="col-md-3 col-md-offset-1 col-sm-6 content-align-center">
-	                    <img src="img/ella-carved.png">
+	                <div id="about-ella-carved-photo" class="col-md-3 col-sm-3 col-xs-3 col-lg-3 col-md-offset-1 content-align-center">
+	                    <img src="img/ella-carved.png" class="ellaPhoto">
 	                </div>
 		</div>
 		<div class="row row--contacts" id="contacts">
 			<div class="col-md-6 col-md-offset-3">
 				<h1 class="conststyle">CONTACTS</h1>
 			</div>
-			<div class="col-md-7 col-md-offset-5"><img src="img/contacts underline.png" alt=""></div>
+			<div class="col-md-7 col-md-offset-5 col--hide"><img src="img/contacts underline.png" alt=""></div>
 			<div class="col-md-12 col--contactscontainer">	
 				<div class="col-md-3 col-md-offset-3">
-					<p class="contacts-text">Адрес магазина в Киеве:<br>
+				<p class="contacts-text"> Контактные телефоны:<br>
+						+380 /095/ 870-00-08<br>
+					<!-- <p class="contacts-text">Адрес магазина в Киеве:<br>
 						г. Киев, ул. Жилянская, 59,<br>
 						 ЖК "Дипломат-холл", 2 этаж,<br>
 						 Магазин "Kust Fashion House"
-					</p>
+					</p> -->
 				</div>
-				<div class="col-md-3 col-md-offset-1">
+				<!-- <div class="col-md-3 col-md-offset-1">
 					<p class="contacts-text">Телефоны:<br>
 						+380 /095/ 870-00-08<br>
 						+380 /099/ 762-27-37<br>
@@ -110,7 +141,7 @@
 						Cб, вс: 10.00 - 17.00
 
 					</p>
-				</div>
+				</div> -->
 			</div>
 		</div>
 		<div class="row row--useful" id="useful">
@@ -123,16 +154,16 @@
 				<a href="#">СХЕМА ПРОЕЗДА</a><br>
 				<a href="#">КАРТА САЙТА</a> -->
 			</div>
-			<div class="col-md-3 col-md-offset-1 col--links">
+			<!-- <div class="col-md-3 col-md-offset-1 col--links">
 				<p>КОНТАКТЫ<br>
 				Адрес магазина в Киеве:<br>
 	             г. Киев, ул. большая<br>
 	             ваильковская, 72,<br> 
 	             ТЦ "олимпийский", 2 этаж,<br>
 	             Магазин "Kust Fashion House"</p>
-			</div>
+			</div> -->
 		</div>
-		<nav class="navbar navbar-custom">
+		<nav class="navbar navbar-custom menu--hide">
 	        <div class="container-fluid">
 	            <div class="navbar-header">
 	              	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#responsive-menu">
@@ -153,7 +184,7 @@
 	                </ul>
 	            </div>
 	        </div>
-	        <div id="about-line-under-menu" class="col-md-12 col-sm-12 content-align-center">
+	        <div id="about-line-under-menu" class="col-md-12 col-sm-12 col-xs-12 col-lg-12 content-align-center">
 	            <img src="img/line-under-menu.png" >
 	        </div>
 	    </nav> 
